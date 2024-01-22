@@ -35,3 +35,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+a .icon {
+    transition: all .4s ease-in-out;
+    fill: #ffffffaf;
+}
+
+a:hover .icon {
+    fill: white;
+}

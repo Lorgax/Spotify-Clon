@@ -1,26 +1,37 @@
-import { HomeIcon, SearchIcon } from "../icons";
-
+import { HomeIcon, LibrariesIcon, SearchIcon } from "../icons";
 
 export const Sidebar = () => {
+
   return (
     <>
-        <aside className="col-span-1 row-span-5 bg-[#121212] rounded-md text-white my-2 ms-2 p-3">
-            <ul>
-                <li>
-                  <a href="" className="flex font-bold items-center">
-                    <HomeIcon className="me-4" width="30px" height="30px" />
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="" className="flex font-bold items-center">
-                    <SearchIcon className="me-4" width="30px" height="30px" />
-                    Search
-                  </a>
-                </li>
-                <li>List</li>
-            </ul>
-        </aside>
-    </>
+      <div className="grid row-span-6">
+      <aside className="col-span-2 row-span-2 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
+          <ul>
+              <li>
+                <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">
+                  <HomeIcon className="me-5 icon" width="27px" height="27px" />
+                  Home
+                </a>
+              </li>
+              <li className="mt-5">
+                <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">
+                  <SearchIcon className="me-5 icon" width="27px" height="27px" />
+                  Search
+                </a>
+              </li>
+          </ul>
+      </aside>
+      <aside className="col-span-2 row-span-4 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
+          <ul>
+              <li>
+                <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">
+                  <LibrariesIcon className="me-5 icon" width="27px" height="27px" />
+                  Your Libraries
+                </a>
+              </li>
+          </ul>
+      </aside>
+      </div>
+     </>
   )
 }

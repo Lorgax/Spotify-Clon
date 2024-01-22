@@ -1,5 +1,5 @@
 
-export const HomeIcon = (props) => (
+export const HomeIcon = (props:any) => (
   <svg
     aria-hidden="true"
     className="Svg-sc-ytk21e-0 bneLcE home-icon"
