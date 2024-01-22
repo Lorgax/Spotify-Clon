@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: conic-gradient(at center bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
