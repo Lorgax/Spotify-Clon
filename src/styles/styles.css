@@ -2,9 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "CircularSp";
+    font-weight: bolder;
+    src: url("/src/assets/fonts/CircularSpotifyText-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSp";
+    font-weight: bold;
+    src: url("/src/assets/fonts/CircularSpotifyText-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSp";
+    font-weight: normal;
+    src: url("/src/assets/fonts/CircularSpotifyText-Book.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "CircularSp";
+    font-weight: lighter;
+    src: url("/src/assets/fonts/CircularSpotifyText-Light.woff2") format("woff2");
+}
+
+html {
+    font-family: "CircularSp", system-ui, -apple-system, sans-serif;
+}
+
 body {
     background: conic-gradient(at center bottom, rgb(15, 23, 42), rgb(88, 28, 135), rgb(15, 23, 42));
     background-position: center;
     background-repeat: no-repeat;
-    /* height: 100vh; */
 }
