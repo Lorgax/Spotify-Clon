@@ -7,6 +7,9 @@ export const spotiAPI = async() => {
         headers: {
             Authorization: `Bearer ${token}`
         },
+        params: {
+            limit: 10
+        }
     });
 
     // console.log(data.playlists.items[1].images);
