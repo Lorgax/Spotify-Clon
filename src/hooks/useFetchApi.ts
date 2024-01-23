@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { spotiAPI } from "./spotiAPI";
+import { spotiAPI } from "../data/spotiAPI";
 
 export const useFetchApi = () => {
 

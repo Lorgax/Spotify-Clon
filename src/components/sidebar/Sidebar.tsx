@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { HomeIcon, LibrariesIcon, SearchIcon } from "../icons";
 
 export const Sidebar = () => {
@@ -8,16 +9,16 @@ export const Sidebar = () => {
       <aside className="col-span-2 row-span-2 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
           <ul>
               <li>
-                <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">
+                <Link to={"/"} className="flex cursor-pointer font-bold items-center hover:text-white">
                   <HomeIcon className="me-5 icon" width="27px" height="27px" />
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mt-5">
-                <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">
+                <Link to={"/search"} className="flex cursor-pointer font-bold items-center hover:text-white">
                   <SearchIcon className="me-5 icon" width="27px" height="27px" />
                   Search
-                </a>
+                </Link>
               </li>
           </ul>
       </aside>

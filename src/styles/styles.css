@@ -17,7 +17,7 @@
 @font-face {
     font-family: "CircularSp";
     font-weight: normal;
-    src: url("/src/assets/fonts/CircularSpotifyText-Book.woff2") format("woff2");
+    src: url("/src/assets/fonts/CircularSpotifyText-Medium.woff2") format("woff2");
 }
 
 @font-face {

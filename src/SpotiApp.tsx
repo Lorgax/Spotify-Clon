@@ -1,11 +1,10 @@
-import { Main, Sidebar, Player } from "./components";
+// import { Main, Sidebar, Player } from "./components";
+import { SpotiRouter } from "./router";
 
 export const SpotiApp = () => {
   return (
     <>
-      <Sidebar />
-      <Main />
-      <Player />
+      <SpotiRouter />
     </>
   )
 }
