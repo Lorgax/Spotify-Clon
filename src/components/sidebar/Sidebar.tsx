@@ -5,8 +5,8 @@ export const Sidebar = () => {
 
   return (
     <>
-      <div className="grid row-span-6">
-      <aside className="col-span-2 row-span-2 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
+      <div className="grid grid-rows-6 row-span-6">
+      <aside className="col-span-2 row-span-1 bg-[#121212] rounded-md text-[#ffffffaf] mt-2 ms-2 p-5">
           <ul>
               <li>
                 <Link to={"/"} className="flex cursor-pointer font-bold items-center hover:text-white">
@@ -22,7 +22,7 @@ export const Sidebar = () => {
               </li>
           </ul>
       </aside>
-      <aside className="col-span-2 row-span-4 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
+      <aside className="col-span-2 row-span-5 bg-[#121212] rounded-md text-[#ffffffaf] my-2 ms-2 p-5">
           <ul>
               <li>
                 <a href="" className="flex cursor-pointer font-bold items-center hover:text-white">

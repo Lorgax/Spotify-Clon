@@ -9,7 +9,7 @@ export const fetchCategories = async() => {
             Authorization: `Bearer ${token}`
         },
         params: {
-            country: "ES"
+            country: "US"
         }
             
     })

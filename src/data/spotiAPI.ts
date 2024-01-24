@@ -8,17 +8,19 @@ export const spotiAPI = async() => {
             Authorization: `Bearer ${token}`
         },
         params: {
-            limit: 10
+            limit: 10,
+            country: "US"
         }
     });
 
-    // console.log(data.playlists.items[1].images);
+    // data.playlists.items.map( item => console.log(item.tracks.href))
 
     const results = data.playlists.items.map( item => ({
         id: item.id,
         name: item.name,
         descr: item.description,
-        imgs: item.images.map( image => image.url)
+        imgs: item.images.map( image => image.url),
+        tracks: item.tracks.href
     }))
 
     return results;
