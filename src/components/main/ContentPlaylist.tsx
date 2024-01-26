@@ -7,7 +7,7 @@ export const ContentPlaylist = () => {
 
     const { dataPlaylist, handleDataPlaylist } = getDataPlaylist();
     const { state } = useLocation();
-    // console.log(state.id.id);
+    console.log(state.url);
     let count = 1;
 
     const handleInfoDataPlaylist = (id) => {
@@ -22,9 +22,13 @@ export const ContentPlaylist = () => {
     return (
         <>
             <Sidebar />
-            <main className="overflow-scroll col-span-3 row-span-6 bg-[#121212] rounded-md text-white my-2 mx-2 p-4">
-                <h2 className="font-bold text-xs mb-3">List</h2>
-                <h3 className="font-bold text-5xl mb-3">Playlist's name</h3>
+            <main className="overflow-scroll col-span-3 row-span-6 bg-[#121212bf] rounded-md text-white my-2 mx-2 p-4">
+                <div className="h-80 relative" style={{backgroundImage: `url(${state.image.image})`}}>
+                    <div className="absolute bottom-6">
+                        <h2 className="font-medium text-sm mb-3">List</h2>
+                        <h3 className="font-bold text-7xl mb-3">{state.name.name}</h3>
+                    </div>
+                </div>
                 <table className="table w-full rounded-md">
                     <thead >
                         <td className="font-light text-white/80 text-sm">#</td>
@@ -37,7 +41,7 @@ export const ContentPlaylist = () => {
                         {
                             dataPlaylist.map( data => (
                                 <tr className="h-[60px] hover:bg-gray-400/50 hover:cursor-pointer transition-all ease-in-out duration-700 rounded-md">
-                                    <td className="text-white/80">{count++}</td>
+                                    <td className="text-white/80 px-3">{count++}</td>
                                     <td>
                                         <div className="flex">
                                             <img width="40px" height="40px" className="rounded-md me-2" src={data.trackImage} alt={data.trackName} />
