@@ -13,7 +13,7 @@ export const Main = () => {
             <div className="grid grid-cols-5 gap-2">
               {
                 featuredPlaylist.map( ({id, name, descr, imgs, tracks}) => (
-                  <CardFeaturedPlaylist key={id} name={name} descr={descr} image={imgs} tracks={tracks} />
+                  <CardFeaturedPlaylist key={id} id={id} name={name} descr={descr} image={imgs} tracks={tracks} />
                 ))
               }
             </div>
