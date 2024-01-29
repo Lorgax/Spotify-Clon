@@ -1,19 +1,19 @@
-import { useState } from "react"
+import { useStore } from "../store/useStore";
 
 export const usePlayer = () => {
   
-    const [player, setPlayer] = useState("pause")
+    const { isPlaying, setIsPlaying } = useStore(state => state)
 
     const handlePlayer = () => {
-        if(player === "play") {
-            setPlayer("pause"); 
+        if(isPlaying) {
+            setIsPlaying(false); 
         } else {
-            setPlayer("play");
+            setIsPlaying(true);
         }
     }
 
     return {
-        player,
+        isPlaying,
         handlePlayer
     }
 }

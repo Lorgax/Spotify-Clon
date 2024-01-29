@@ -44,3 +44,9 @@ a .icon {
 a:hover .icon {
     fill: white;
 }
+
+.button-single-song button {
+    position: relative;
+    top: unset;
+    left: 7px;
+}
